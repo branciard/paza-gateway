@@ -9,4 +9,4 @@ services:
             - POSTGRES_USER=pazagateway
             - POSTGRES_PASSWORD=
         ports:
-            - 5432:5432
+            - 5430:5432
