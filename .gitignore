@@ -105,6 +105,8 @@ Desktop.ini
 # Directories
 ######################
 build/
++!src/main/webapp/bower_components/ngInfiniteScroll/build
++!src/main/webapp/bower_components/angular-loading-bar/build
 bin/
 spring_loaded/
 deploy/
