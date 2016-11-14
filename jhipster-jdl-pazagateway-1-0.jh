@@ -1,0 +1,41 @@
+
+
+
+enum AssetStatus {
+    DESTROYED, OWNED, AVAILABLE, RESERVED, OWNERSHIP_TRADING
+}
+
+// enum AssetAction {
+//   DESTROY,
+//   CREATE,
+//   UPDATE,
+//   OFFER,
+//   CANCEL_OFFER, RESERVE,
+//   RESERVE,
+//   CANCEL_RESERVE_REQUEST,
+//   CANCEL_RESERVE_REQUESTED,
+//   REQUEST_OWNERSHIP,
+//   ACCEPT_OWNERSHIP_REQUESTED,
+//   REFUSE_OWNERSHIP_REQUESTED,
+ //  GIVE_OWNERSHIP,
+//   ACCEPT_OWNERSHIP_GIVEN,
+//   REFUSE_OWNERSHIP_GIVEN
+//}
+entity Asset {
+	name String required
+    status String required
+}
+entity Owner {
+	ecert String
+}
+
+
+// Set pagination options
+paginate Asset, Owner with infinite-scroll
+
+microservice Asset with pazaassetbddsrv
+
+microservice Owner with pazauaa
+
+// Set an angular suffix
+angularSuffix * with Paza
