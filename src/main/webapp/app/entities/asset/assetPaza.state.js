@@ -26,6 +26,7 @@
             resolve: {
                 translatePartialLoader: ['$translate', '$translatePartialLoader', function ($translate, $translatePartialLoader) {
                     $translatePartialLoader.addPart('asset');
+                    $translatePartialLoader.addPart('assetStatus');
                     $translatePartialLoader.addPart('global');
                     return $translate.refresh();
                 }]
@@ -48,6 +49,7 @@
             resolve: {
                 translatePartialLoader: ['$translate', '$translatePartialLoader', function ($translate, $translatePartialLoader) {
                     $translatePartialLoader.addPart('asset');
+                    $translatePartialLoader.addPart('assetStatus');
                     return $translate.refresh();
                 }],
                 entity: ['$stateParams', 'Asset', function($stateParams, Asset) {

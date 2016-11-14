@@ -28,7 +28,7 @@
                 <tr ng-repeat="asset in vm.assets track by asset.id">
                     <td><a ui-sref="assetPaza-detail({id:asset.id})">{{asset.id}}</a></td>
                     <td>{{asset.name}}</td>
-                    <td>{{asset.status}}</td>
+                    <td data-translate="{{'pazagatewayApp.AssetStatus.' + asset.status}}">{{asset.status}}</td>
                     <td class="text-right">
                         <div class="btn-group flex-btn-group-container">
                             <button type="submit"

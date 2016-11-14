@@ -11,7 +11,8 @@
         },
         {
             "fieldName": "status",
-            "fieldType": "String",
+            "fieldType": "AssetStatus",
+            "fieldValues": "DESTROYED,OWNED,AVAILABLE,RESERVED,OWNERSHIP_TRADING",
             "fieldValidateRules": [
                 "required"
             ]

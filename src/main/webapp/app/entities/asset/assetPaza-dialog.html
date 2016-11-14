@@ -27,9 +27,13 @@
         </div>
         <div class="form-group">
             <label class="control-label" data-translate="pazagatewayApp.asset.status" for="field_status">Status</label>
-            <input type="text" class="form-control" name="status" id="field_status"
-                    ng-model="vm.asset.status"
-                    required />
+            <select class="form-control" name="status" ng-model="vm.asset.status" id="field_status" required>
+                <option value="DESTROYED" data-translate="pazagatewayApp.AssetStatus.DESTROYED">DESTROYED</option>
+                <option value="OWNED" data-translate="pazagatewayApp.AssetStatus.OWNED">OWNED</option>
+                <option value="AVAILABLE" data-translate="pazagatewayApp.AssetStatus.AVAILABLE">AVAILABLE</option>
+                <option value="RESERVED" data-translate="pazagatewayApp.AssetStatus.RESERVED">RESERVED</option>
+                <option value="OWNERSHIP_TRADING" data-translate="pazagatewayApp.AssetStatus.OWNERSHIP_TRADING">OWNERSHIP_TRADING</option>
+            </select>
             <div ng-show="editForm.status.$invalid">
                 <p class="help-block"
                     ng-show="editForm.status.$error.required" data-translate="entity.validation.required">

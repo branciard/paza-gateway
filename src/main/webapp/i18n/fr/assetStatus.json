@@ -1,0 +1,12 @@
+{
+    "pazagatewayApp": {
+        "AssetStatus" : {
+            "null": "",
+            "DESTROYED": "DESTROYED",
+            "OWNED": "OWNED",
+            "AVAILABLE": "AVAILABLE",
+            "RESERVED": "RESERVED",
+            "OWNERSHIP_TRADING": "OWNERSHIP_TRADING"
+        }
+    }
+}

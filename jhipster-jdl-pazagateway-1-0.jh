@@ -23,7 +23,7 @@ enum AssetStatus {
 //}
 entity Asset {
 	name String required
-    status String required
+    status AssetStatus required
 }
 entity Owner {
 	ecert String
