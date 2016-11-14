@@ -9,7 +9,7 @@
 
     function OwnerPazaController ($scope, $state, Owner, ParseLinks, AlertService) {
         var vm = this;
-        
+
         vm.owners = [];
         vm.loadPage = loadPage;
         vm.page = 0;
@@ -37,7 +37,11 @@
             }
 
             function onSuccess(data, headers) {
-                vm.links = ParseLinks.parse(headers('link'));
+                //issue TypeError: Cannot read property 'length' of null whith jhipster enties generated
+                var linksToParse= headers('link');
+                if(!jQuery.isEmptyObject(linksToParse)){
+                    vm.links = ParseLinks.parse(linksToParse);
+                }
                 vm.totalItems = headers('X-Total-Count');
                 for (var i = 0; i < data.length; i++) {
                     vm.owners.push(data[i]);
