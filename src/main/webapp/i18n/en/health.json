@@ -14,6 +14,7 @@
             "discoveryComposite": "Discovery Composite",
             "refreshScope": "Microservice Refresh Scope",
             "configServer": "Microservice Config Server",
+            "hystrix": "Hystrix",
             "diskSpace": "Disk space",
             "mail": "Email",
             "db": "Database"

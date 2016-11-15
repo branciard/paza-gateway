@@ -4,7 +4,7 @@
     angular
         .module('pazagatewayApp')
         .filter('characters', characters);
-        
+
     function characters () {
         return charactersFilter;
 
