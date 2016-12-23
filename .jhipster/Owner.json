@@ -1,0 +1,17 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "ecert",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20161114144023",
+    "entityTableName": "owner",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "no",
+    "microserviceName": "pazauaa",
+    "angularJSSuffix": "Paza"
+}
